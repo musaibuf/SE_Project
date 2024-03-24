@@ -1,0 +1,70 @@
+\documentclass{article}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{booktabs} % For formal tables
+\usepackage{enumitem} % Custom list configurations
+\usepackage{titlesec} % Section title customization
+\usepackage{hyperref} % For hyperlinks
+
+\title{\textbf{AI-Enhanced Sales Forecasting System Project Backlog}}
+\author{Abubakar Mirza 07147 \\ Musaib 07694}
+\date{February 11, 2024}
+
+\begin{document}
+
+\maketitle
+
+\section*{Introduction}
+This document outlines the prioritized features for the AI-Enhanced Sales Forecasting System development, along with high-level effort estimates. The features are categorized into high, medium, and low priorities to guide the development process effectively.
+
+\section*{High Priority Features}
+High priority features are crucial for the initial launch, providing the core functionalities necessary for basic operations.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{p{4.5cm}p{8cm}r}
+\toprule
+\textbf{Feature} & \textbf{Description} & \textbf{Effort Estimate} \\
+\midrule
+Data Import and Integration & Import historical sales, customer demographics, and market trends. & High (3 weeks) \\
+Machine Learning Model & Integrate advanced AI models for accurate sales forecasting. & High (6 weeks) \\
+Real-time Executive Dashboard & Implement a dashboard with KPIs for real-time performance monitoring. & High (5 weeks) \\
+User Authentication System & Secure access with user authentication and authorization. & High (3 weeks) \\
+Customizable Forecasting Parameters & Allow customization of forecast parameters via a user-friendly interface. & High (4 weeks) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section*{Medium Priority Features}
+Medium priority features enhance the system by adding significant value without being critical for the initial launch.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{p{4.5cm}p{8cm}r}
+\toprule
+\textbf{Feature} & \textbf{Description} & \textbf{Effort Estimate} \\
+\midrule
+User Customizable Dashboards & Enable personalized dashboard creation for users. & Medium (4 weeks) \\
+Admin Configuration Interface & Admin interface for system settings and compliance. & Medium (3 weeks) \\
+Customer Demographics & Enhance forecasts with customer demographic data. & Medium (5 weeks) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section*{Low Priority Features}
+Low priority features are considered nice-to-have and can be added post-launch to improve or extend the functionality.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{p{4.5cm}p{8cm}r}
+\toprule
+\textbf{Feature} & \textbf{Description} & \textbf{Effort Estimate} \\
+\midrule
+Feedback Loop for Model Improvement & Continuous improvement mechanism for forecasting accuracy. & Low (4 weeks) \\
+Integration with External Business Systems & CRM, ERP, and inventory management integration for comprehensive insights. & Low (5 weeks) \\
+Usability Testing and Interface Enhancements & Refine user interfaces based on feedback. & Low (2 weeks) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\end{document}
