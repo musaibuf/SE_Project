@@ -1,0 +1,88 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{tikz}
+% \usetikzlibrary{positioning, arrows.meta}
+\usepackage[breaklinks=true]{hyperref}
+\usetikzlibrary{positioning, shapes.geometric}
+
+\title{AI-Enhanced Sales Forecasting System}
+\author{Musaib \\ Abu Bakar Mirza}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Project Title}
+AI-Enhanced Sales Forecasting System
+
+\section{Project Type}
+Web Application for Sales Forecasting
+
+\section{Trello Board Link}
+\url{https://trello.com/invite/b/Z5hKeAwM/ATTIeeede75617cf5fb921b08927399cfd5e7E2140C1/project}
+
+
+\section{High-Level Scope or Idea}
+The project is centered around developing an advanced AI-Enhanced Sales Forecasting System. This system aims to provide businesses with precise predictions of future sales, enabling better decision-making and strategic planning. Key features and objectives include:
+\begin{itemize}
+    \item \textbf{Data Integration:} Incorporating a wide range of data sources, including historical sales data, customer demographics, market trends, seasonal factors, and economic indicators.
+
+    \item \textbf{Predictive Analytics:} Utilizing AI algorithms, such as time series analysis and machine learning models, to forecast future sales. This will include the development of custom models tailored to specific industry needs.
+
+    \item \textbf{Real-time Analysis:} Offering real-time data processing capabilities to ensure the system is responsive to current market dynamics.
+
+    \item \textbf{User-Centric Design:} Developing an intuitive user interface that allows users to input data, customize forecasts, and visualize results in an easily interpretable format.
+
+    \item \textbf{Scalability and Flexibility:} Ensuring the system is scalable to handle large datasets and flexible to adapt to different business sizes and industries.
+
+    \item \textbf{Accuracy Improvement:} Continuously improving forecast accuracy by implementing feedback loops that adjust models based on actual sales outcomes.
+
+    \item \textbf{Integration with Business Operations:} Providing insights that can directly influence and integrate with inventory management, marketing strategies, and resource allocation.
+
+    \item \textbf{Customizable Reporting and Dashboards:} Enabling users to create custom reports and dashboards that highlight key performance indicators (KPIs) and forecast insights.
+
+    \item \textbf{Compliance and Security:} Ensuring data privacy and security, adhering to relevant data protection regulations.
+\end{itemize}
+
+\section{Tech Stack}
+\begin{itemize}
+  \item Backend: Node.js with Express
+  \item Database: MongoDB
+  \item Frontend: React.js
+  \item AI/ML: TensorFlow or PyTorch for implementing predictive models
+  \item Version Control: Bitbucket
+  \item Project Management: Trello
+  \item Wireframing/Design: Figma
+\end{itemize}
+
+
+\section{Project Overview (Context Diagram)}
+
+\begin{figure}[htb]
+    \centering
+    \begin{tikzpicture}[>=stealth, thick, node distance=2cm]
+        \node (salesSystem) [ellipse, draw, align=center] {Sales Forecasting\\System};
+        
+        \node (dataSources) [rectangle, draw, left=5.9cm of salesSystem, align=center] {Historical Sales Data\\Market Trends\\Economic Indicators\\Customer Demographics};
+        \node (endUsers) [rectangle, draw, below left=5cm and 6cm of salesSystem, align=center] {Sales Analysts\\Marketing Team\\Company Executives};
+        \node (admin) [rectangle, draw, above=3cm  of salesSystem, align=center] {System Configuration\\User Management\\Compliance Monitoring};
+        \node (otherSystems) [rectangle, draw, below right=2cm and -0.7cm of salesSystem, align=center] {CRM Integration\\ERP Systems\\Inventory Management};
+        
+        \node (backend) [rectangle, draw, below=5cm of salesSystem, align=center] {AI Model Processing\\Real-time Data Handling\\Security Services};
+        \node (data) [rectangle, draw, below=2cm of backend, align=center] {Sales Data Storage\\Model Training Data\\Forecasting Reports};
+        
+        \draw[<->] (salesSystem) -- (dataSources) node[midway, above, sloped] {Incorporate Diverse Data Sources};
+        \draw[<->] (salesSystem) -- (endUsers) node[midway, above, sloped] {Interactive Forecasting UI};
+        \draw[<->] (salesSystem) -- (admin) node[midway, above, sloped] {Admin Interface};
+        \draw[<->] (salesSystem) -- (otherSystems) node[midway, above, right] {External Sync};
+        
+        \draw[<->] (salesSystem) -- (backend) node[midway, left] {Forecast Model Execution};
+        \draw[<->] (backend) -- (data) node[midway, left] {Secure Data Warehousing};
+
+    \end{tikzpicture}
+    \caption{Extended Context Diagram for AI-Enhanced Sales Forecasting System}
+\end{figure}
+
+\end{document}
